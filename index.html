@@ -9,11 +9,12 @@
     <title>Startpagina</title>
 </head>
 <style>
-    li a {display: block; color: white; text-align: center; padding: 12px 16px; text-decoration: none; margin: 0 50px; background-color: #1034A6;}
-    a img {margin: 0 50px;}
+    li a {display: block; color: white; text-align: center; padding: 12px 16px; text-decoration: none; flex: 0 1 auto; background-color: #1034A6;}
+    .rij {display: flex;}
+    .kolom {flex: 25%; padding: 5px;}
 </style>
 <body style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: #FEFEFA; font-size: large;">
-    <ul style="list-style-type: none; overflow: hidden; background-color: #4B92DB; margin: 0 15%;">
+    <ul style="list-style-type: none; overflow: hidden; background-color: #4B92DB; display: flex; align-items: stretch; justify-content: space-evenly;">
         <li style="float: left;"><a href="index.html">Startpagina</a></li>
         <li style="float: left;"><a href="cv.html">CV</a></li>
         <li style="float: left;"><a href="ervaring.html">Ervaring</a></li>
@@ -29,10 +30,22 @@
         Indien je meer wilt weten over mijn opleidingen en werk, kan je mijn curriculum vitae lezen. De pagina "Ervaring" geeft een diepere uitleg bij die verdiensten. Daarna kan je ook de pagina met mijn hobby's lezen om wat meer over mijn dagelijks leven te weten te komen.
         Tenslotte kan je ook mijn contactgegevens vinden bij "Contact" en heb je de mogelijkheid om vragen naar mij op te sturen. Ik wens je veel leesplezier!
     </p>
-    <a href="cv.html"><img src="img/index_cv.png" alt="blok_cv"></a>
-    <a href="ervaring.html"><img src="img/index_ervaring.png" alt="blok_ervaring"></a>
-    <a href="hobby.html"><img src="img/index_hobby.png" alt="blok_hobby"></a>
-    <a href="contact.html"><img src="img/index_contact.png" alt="blok_contact"></a>
+    <div class="rij">
+        <div class="kolom">
+            <a href="cv.html"><img src="img/index_cv.png" alt="blok_cv"></a>
+        </div>
+        <div class="kolom">
+            <a href="ervaring.html"><img src="img/index_ervaring.png" alt="blok_ervaring"></a>
+        </div>
+        <div class="kolom">
+            <a href="hobby.html"><img src="img/index_hobby.png" alt="blok_hobby"></a>
+
+        </div>
+        <div class="kolom">
+            <a href="contact.html"><img src="img/index_contact.png" alt="blok_contact"></a>
+        </div>
+    </div>
+    
     <img src="img/index_portret.jpg" alt="portret Joachim" style="display: block; margin: 0 auto; width: 25%; padding: 40px 0;">
     
 </body>
